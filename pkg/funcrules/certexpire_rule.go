@@ -19,6 +19,7 @@ type certificate struct {
 	Residual string `yaml:"residual" json:"residual,omitempty"`
 }
 
+
 type CertExpireRule struct{}
 
 func (cer CertExpireRule) Exec(ctx context.Context) ValidateResults {
